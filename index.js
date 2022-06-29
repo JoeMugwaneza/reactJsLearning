@@ -102,17 +102,22 @@ Render your list to the page
 
 function PartOne(){
     return (
-      <div>
-      <h1>React is Fun</h1>
-      <h3>Things I love about React!</h3>
-        <ol>
-            <li>It is populary</li>
-            <li>It will give me a part time job easily</li>
-            <li>It is the way to starting a career in coding</li>
-            <li>Nothing!</li>
-        </ol>
-      </div>  
-    )
+        <>
+        <header>
+            <nav>
+                <img src="./react-logo.png" width="40px"/>
+                <h1>Funny Reasons why I love React!</h1>
+            </nav>
+        </header>
+                <ol>
+                    <li>It's a popular library, so I'll be able to fit in with the cool kids!</li>
+                    <li>I'm more likely to get a job as a developer if I know React</li>
+                </ol>
+            <footer>
+                <p> © 2022 Joseph development. All rights reserved.</p>
+            </footer>
+        </>
+    );
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
