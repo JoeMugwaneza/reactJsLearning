@@ -102,23 +102,23 @@ Render your list to the page
 
 function PartOne(){
     return (
-        <>
+    <div>
         <header>
             <nav>
                 <img src="./react-logo.png" width="40px"/>
-                <h1>Funny Reasons why I love React!</h1>
             </nav>
         </header>
+                <h1>Funny Reasons why I love React!</h1>
                 <ol>
                     <li>It's a popular library, so I'll be able to fit in with the cool kids!</li>
                     <li>I'm more likely to get a job as a developer if I know React</li>
                 </ol>
             <footer>
-                <p> © 2022 Joseph development. All rights reserved.</p>
+                <small> © 2022 Joseph development. All rights reserved.</small>
             </footer>
-        </>
+    </div>   
     );
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(< PartOne/>)
+root.render(<PartOne />)
