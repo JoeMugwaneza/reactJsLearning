@@ -7,7 +7,7 @@
 // root.render(element);
 
 // function MainContent(){
-//     return ( 
+//     return (
 //         <h1> I'm learning react!</h1>
 //     )
 // }
@@ -87,7 +87,7 @@
 
 
 /**
-Challenge: 
+Challenge:
 
 Part 1: Create a page of your own using a custom Page component
 
@@ -100,25 +100,46 @@ Render your list to the page
 
 // PART ONE OF THE CHALLENGE
 
+function Header(){
+ return (
+   <header>
+    <nav>
+       <img src="./react-logo.png" width="40px"/>
+    </nav>
+   </header>
+ )
+}
+
+
+function MainContent(){
+  return (
+  <div>
+   <h1>Funny Reasons why I love React!</h1>
+   <ol>
+     <li>It's a popular library, so I'll be able to fit in with the cool kids!</li>
+     <li>I'm more likely to get a job as a developer if I know React</li>
+   </ol>
+  </div>
+  )
+}
+
+function Footer(){
+ return (
+  <footer>
+   <small> © 2022 Joseph development. All rights reserved.</small>
+ </footer>
+ )
+}
+
 function PartOne(){
     return (
     <div>
-        <header>
-            <nav>
-                <img src="./react-logo.png" width="40px"/>
-            </nav>
-        </header>
-                <h1>Funny Reasons why I love React!</h1>
-                <ol>
-                    <li>It's a popular library, so I'll be able to fit in with the cool kids!</li>
-                    <li>I'm more likely to get a job as a developer if I know React</li>
-                </ol>
-            <footer>
-                <small> © 2022 Joseph development. All rights reserved.</small>
-            </footer>
-    </div>   
+     <Header />
+     <MainContent />
+     <Footer />
+    </div>
     );
 };
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(<PartOne />)
+root.render(<PartOne />);
