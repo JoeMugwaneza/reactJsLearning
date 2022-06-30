@@ -1,8 +1,32 @@
 html, body {
-    margin: 0, auto;
+    margin: auto;
     padding: 10px;
 }
 
-img{
-    width: 40px;
+.nav-logo{
+    width: 60px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-taps{
+    list-style: none;
+    display: flex;
+    
+}
+.nav-taps > li{
+    display: inline;
+    padding: 20px;
+    font-weight: 700;
+    font-size: 1.2em;
+}
+
+.content-wrapper{
+    margin: auto;
+    width: 50%;
+
 }

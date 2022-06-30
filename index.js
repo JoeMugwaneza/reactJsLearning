@@ -103,8 +103,13 @@ Render your list to the page
 function Header(){
  return (
    <header>
-    <nav>
-       <img src="./react-logo.png" width="40px"/>
+    <nav className="nav">
+       <img className="nav-logo" src="./react-logo.png"/>
+       <ul className="nav-taps">
+        <li>Pricing</li>
+        <li>About</li>
+        <li>Contact</li>
+       </ul>
     </nav>
    </header>
  )
@@ -133,7 +138,7 @@ function Footer(){
 
 function PartOne(){
     return (
-    <div>
+    <div className="content-wrapper">
      <Header />
      <MainContent />
      <Footer />
