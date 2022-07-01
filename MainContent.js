@@ -1,5 +1,6 @@
+import React from 'react'
 
-export default function MainContent(){
+function MainContent(){
   return (
   <div>
    <h1>Funny Reasons why I love React!</h1>
@@ -10,3 +11,5 @@ export default function MainContent(){
   </div>
   )
 }
+
+export default MainContent
