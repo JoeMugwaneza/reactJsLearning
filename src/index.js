@@ -1,12 +1,9 @@
-// import React from 'react'
-// import ReactDOM from 'react-dom'
+import React from 'react';
 
 import Header from './Header.js';
 import MainContent from './MainContent.js';
 import Footer from './Footer.js';
 import './styles/index.css';
-import React from 'react';
-import { render } from 'react-dom';
 
 
 
